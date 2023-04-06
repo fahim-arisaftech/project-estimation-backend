@@ -5,21 +5,106 @@ from .models import DjangoProjectEstimation, PHPProjectEstimation, WordpressProj
 
 @admin.register(DjangoProjectEstimation)
 class DjangoAdmin(admin.ModelAdmin):
-    list_display = ("feature", "estimation")
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
 
-# admin.site.register(DjangoProjectEstimation)
-admin.site.register(PHPProjectEstimation)
-admin.site.register(WordpressProjectEstimation)
-admin.site.register(DOTNetProjectEstimation)
-admin.site.register(SpringBootProjectEstimation)
-admin.site.register(FastAPIProjectEstimation)
-admin.site.register(FlaskProjectEstimation)
-admin.site.register(NodeProjectEstimation)
-admin.site.register(ReactProjectEstimation)
-admin.site.register(VueProjectEstimation)
-admin.site.register(AngularProjectEstimation)
-admin.site.register(NextJSProjectEstimation)
-admin.site.register(NativeAndroidProjectEstimation)
-admin.site.register(NativeIOSProjectEstimation)
-admin.site.register(FlutterProjectEstimation)
-admin.site.register(ReactNativeProjectEstimation)
+@admin.register(PHPProjectEstimation)
+class PHPAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+@admin.register(WordpressProjectEstimation)
+class WordpressAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+@admin.register(DOTNetProjectEstimation)
+class DOTNetAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(SpringBootProjectEstimation)
+class SpringBootAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(FastAPIProjectEstimation)
+class FastAPIAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(FlaskProjectEstimation)
+class FlaskAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(NodeProjectEstimation)
+class NodeAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(ReactProjectEstimation)
+class ReactAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(VueProjectEstimation)
+class VueAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(AngularProjectEstimation)
+class AngularAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(NextJSProjectEstimation)
+class NextJSAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(NativeAndroidProjectEstimation)
+class NativeAndroidAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+
+@admin.register(NativeIOSProjectEstimation)
+class NativeIOSdAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+@admin.register(FlutterProjectEstimation)
+class FlutterdAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
+
+@admin.register(ReactNativeProjectEstimation)
+class ReactNativeAdmin(admin.ModelAdmin):
+    list_display = ("id", "feature", "estimation")
+    search_fields = ["feature"]
+    ordering = ["-id"]
