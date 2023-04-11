@@ -114,15 +114,14 @@ WSGI_APPLICATION = 'projectestimation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# postgres DB connection
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': '<DB_NAME>',
-       'USER': '<DB_USERNAME>',
-       'PASSWORD': '<DB_PASSWORD',
-       'HOST': '<IP_ADDRESS>',
-       'PORT': '<DB_PORT>',
+       'NAME': '<database_name>',
+       'USER': '<database_username>',
+       'PASSWORD': '<password>',
+       'HOST': '<database_hostname_or_ip>',
+       'PORT': '<database_port>',
    }
 }
 
