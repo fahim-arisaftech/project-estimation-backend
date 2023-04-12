@@ -114,6 +114,7 @@ WSGI_APPLICATION = 'projectestimation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# postgres config here
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
